@@ -40,7 +40,7 @@ namespace VisproProject
             panelHeader.MouseMove += new MouseEventHandler(PanelHeader_MouseMove);
             panelHeader.MouseUp += new MouseEventHandler(PanelHeader_MouseUp);
 
-            this.dateTime.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
+            this.dateLapangan.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             this.btncourt1.Click += new System.EventHandler(this.btncourt1_Click);
             this.btncourt2.Click += new System.EventHandler(this.btncourt2_Click);
             this.btncourt3.Click += new System.EventHandler(this.btncourt3_Click);
@@ -184,118 +184,182 @@ namespace VisproProject
 
         private void btncourt1_Click(object sender, EventArgs e)
         {
-            //isDropdownVisible = !isDropdownVisible;
-            //panelJam.Visible = isDropdownVisible;
-            //lblJadwalTitle.Visible = true;
-            //lblJadwalTitle.Text = "Jadwal Court 1";
-
-            //if (!panelJam.Visible || lblJadwalTitle.Text != "Jadwal Court 1")
-            //{
-            //    panelJam.Visible = true;
-            //    lblJadwalTitle.Text = "Jadwal Court 1";
-            //}
-            //else
-            //{
-            //    panelJam.Visible = false;
-            //}
-            //panelJam.Visible = true;
-            ShowSchedulePanel("Court 1");
+            //ShowSchedulePanel("Court 1");
+            panelJam.Visible = true;
             UpdateCourtButtons("COURT 1");
         }
 
         private void btncourt2_Click(object sender, EventArgs e)
         {
-            //isDropdownVisible = !isDropdownVisible;
-            //panelJam.Visible = isDropdownVisible;
-            //lblJadwalTitle.Text = "Jadwal Court 2";
-            //if (!panelJam.Visible || lblJadwalTitle.Text != "Jadwal Court 2")
-            //{
-            //    panelJam.Visible = true;
-            //    lblJadwalTitle.Text = "Jadwal Court 2";
-            //}
-            //else
-            //{
-            //    panelJam.Visible = false;
-            //}
-            //panelJam.Visible = true;
-            ShowSchedulePanel("Court 2");
+            //ShowSchedulePanel("Court 2");
+            panelJam.Visible = true;
             UpdateCourtButtons("COURT 2");
         }
 
         private void btncourt3_Click(object sender, EventArgs e)
         {
-            //isDropdownVisible = !isDropdownVisible;
-            //panelJam.Visible = isDropdownVisible;
-            //lblJadwalTitle.Text = "Jadwal Court 3";
-
-            //if (!panelJam.Visible || lblJadwalTitle.Text != "Jadwal Court 3")
-            //{
-            //    panelJam.Visible = true;
-            //    lblJadwalTitle.Text = "Jadwal Court 3";
-            //}
-            //else
-            //{
-            //    panelJam.Visible = false;
-            //}
-            //panelJam.Visible = true;
-            ShowSchedulePanel("Court 3");
+            //ShowSchedulePanel("Court 3");
+            panelJam.Visible = true;
             UpdateCourtButtons("COURT 3");
         }
 
-        //private void LoadBookings(DateTime date)
+        //private void UpdateCourtButtons(string courtName)
         //{
-        //    bookings = new Dictionary<string, List<string>>();
+        //    panelJam.Controls.Clear();
+        //    Dictionary<string, bool> bookedSlots = new Dictionary<string, bool>();
 
-        //    using (MySqlConnection conn = new MySqlConnection(alamat))
+        //    using (MySqlConnection koneksi = new MySqlConnection(alamat))
         //    {
-        //        conn.Open();
-        //        string query = "SELECT field, time_slot FROM tbl_reservasi WHERE date = @date AND status != 'Dibatalkan'";
-        //        MySqlCommand cmd = new MySqlCommand(query, conn);
-        //        cmd.Parameters.AddWithValue("@date", date.ToString("yyyy-MM-dd"));
-        //        MySqlDataReader reader = cmd.ExecuteReader();
+        //        koneksi.Open();
+        //        string query = "SELECT time_slot FROM tbl_reservasi WHERE field = @court AND `date` = @date";
 
-        //        while (reader.Read())
+        //        using (MySqlCommand perintah = new MySqlCommand(query, koneksi))
         //        {
-        //            string court = reader["field"].ToString();
-        //            string time = reader["time_slot"].ToString();
+        //            perintah.Parameters.AddWithValue("@court", courtName);
+        //            perintah.Parameters.AddWithValue("@date", dateTime.Value.ToString("yyyy-MM-dd"));
 
-        //            if (!bookings.ContainsKey(court))
-        //                bookings[court] = new List<string>();
-
-        //            bookings[court].Add(time);
+        //            using (MySqlDataReader reader = perintah.ExecuteReader())
+        //            {
+        //                while (reader.Read())
+        //                {
+        //                    bookedSlots[reader["time_slot"].ToString()] = true;
+        //                }
+        //            }
         //        }
         //    }
 
-        //    UpdateCourtButtons();
+        //    string[] availableSlots = new string[]
+        //    {
+        //"08:00 - 09:00", "09:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00",
+        //"13:00 - 14:00", "14:00 - 15:00", "15:00 - 16:00", "16:00 - 17:00", "17:00 - 18:00",
+        //"18:00 - 19:00", "19:00 - 20:00", "20:00 - 21:00", "21:00 - 22:00"
+        //    };
+
+        //    Label lblCourt = new Label();
+        //    lblCourt.Text = courtName;
+        //    lblCourt.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        //    lblCourt.Size = new Size(200, 20);
+        //    lblCourt.Location = new Point(50, 20);
+        //    panelJam.Controls.Add(lblCourt);
+
+        //    int x = 50, y = 50;
+        //    Dictionary<Button, CheckBox> buttonCheckboxMap = new Dictionary<Button, CheckBox>();
+        //    Button btnKonfirmasi = new Button();
+        //    btnKonfirmasi.Text = "Konfirmasi";
+        //    btnKonfirmasi.Size = new Size(80, 30);
+        //    btnKonfirmasi.Location = new Point(600, y + 100);
+        //    btnKonfirmasi.FlatStyle = FlatStyle.Flat;
+        //    btnKonfirmasi.FlatAppearance.BorderSize = 1;
+        //    btnKonfirmasi.Enabled = false;
+
+        //    foreach (string slot in availableSlots)
+        //    {
+        //        Button btn = new Button();
+        //        btn.Text = slot;
+        //        btn.Size = new Size(120, 27);
+        //        btn.Location = new Point(x, y);
+        //        btn.FlatStyle = FlatStyle.Flat;
+        //        btn.FlatAppearance.BorderSize = 1;
+        //        btn.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        //        btn.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+        //        btn.Font = new Font("Segoe UI", 8, FontStyle.Regular);
+
+        //        CheckBox chk = new CheckBox();
+        //        chk.Visible = false;
+        //        chk.Checked = false;
+
+        //        if (bookedSlots.ContainsKey(slot))
+        //        {
+        //            btn.BackColor = Color.Red;
+        //            btn.Enabled = false;
+        //        }
+        //        else
+        //        {
+        //            btn.BackColor = Color.Green;
+        //        }
+
+        //        btn.Click += (sender, e) => {
+        //            chk.Checked = !chk.Checked;
+        //            btn.BackColor = chk.Checked ? Color.Yellow : Color.Green;
+        //            btnKonfirmasi.Enabled = buttonCheckboxMap.Values.Any(cb => cb.Checked);
+        //        };
+
+        //        panelJam.Controls.Add(btn);
+        //        buttonCheckboxMap[btn] = chk;
+
+        //        x += 120;
+        //        if (x > 560)
+        //        {
+        //            x = 50;
+        //            y += 30;
+        //        }
+        //    }
+
+        //    btnKonfirmasi.Click += (sender, e) => PesanSlot(courtName, buttonCheckboxMap);
+        //    panelJam.Controls.Add(btnKonfirmasi);
         //}
 
+        //private void PesanSlot(string courtName, Dictionary<Button, CheckBox> buttonCheckboxMap)
+        //{
+        //    List<string> selectedSlots = new List<string>();
+        //    foreach (var pair in buttonCheckboxMap)
+        //    {
+        //        if (pair.Value.Checked)
+        //        {
+        //            selectedSlots.Add(pair.Key.Text);
+        //        }
+        //    }
+
+        //    if (selectedSlots.Count == 0)
+        //    {
+        //        MessageBox.Show("Pilih minimal satu slot waktu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        return;
+        //    }
+
+        //    using (MySqlConnection koneksi = new MySqlConnection(alamat))
+        //    {
+        //        koneksi.Open();
+        //        foreach (string slot in selectedSlots)
+        //        {
+        //            string query = "INSERT INTO tbl_reservasi (field, date, time_slot, status) VALUES (@court, @date, @slot, 'Mendatang')";
+        //            using (MySqlCommand perintah = new MySqlCommand(query, koneksi))
+        //            {
+        //                perintah.Parameters.AddWithValue("@court", courtName);
+        //                perintah.Parameters.AddWithValue("@date", dateTime.Value.ToString("yyyy-MM-dd"));
+        //                perintah.Parameters.AddWithValue("@slot", slot);
+        //                perintah.ExecuteNonQuery();
+        //            }
+        //        }
+        //    }
+
+        //    MessageBox.Show("Pemesanan berhasil!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //    UpdateCourtButtons(courtName);
+        //}
         private void UpdateCourtButtons(string courtName)
         {
-            // Simpan data booking di Dictionary
-            Dictionary<string, string> bookedSlots = new Dictionary<string, string>();
+            panelJam.Controls.Clear();
+            Dictionary<string, bool> bookedSlots = new Dictionary<string, bool>();
 
-            // Hapus semua tombol lama di panelJam
-            //panelJam.Controls.Clear();
-
-            // Query database untuk mendapatkan data reservasi lapangan yang dipilih
-            string query = $"SELECT time_slot, status FROM tbl_reservasi WHERE field = '{courtName}' AND date = '{dateTime.Value.ToString("yyyy-MM-dd")}'";
-
-            // Buat koneksi ke database
             using (MySqlConnection koneksi = new MySqlConnection(alamat))
             {
                 koneksi.Open();
-                MySqlCommand perintah = new MySqlCommand(query, koneksi);
-                MySqlDataReader reader = perintah.ExecuteReader();
+                string query = "SELECT time_slot FROM tbl_reservasi WHERE field = @court AND `date` = @date";
 
-                while (reader.Read())
+                using (MySqlCommand perintah = new MySqlCommand(query, koneksi))
                 {
-                    bookedSlots[reader["time_slot"].ToString()] = reader["status"].ToString();
-                }
+                    perintah.Parameters.AddWithValue("@court", courtName);
+                    perintah.Parameters.AddWithValue("@date", dateLapangan.Value.ToString("yyyy-MM-dd"));
 
-                reader.Close();
+                    using (MySqlDataReader reader = perintah.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            bookedSlots[reader["time_slot"].ToString()] = true;
+                        }
+                    }
+                }
             }
 
-            // List jam yang tersedia
             string[] availableSlots = new string[]
             {
         "08:00 - 09:00", "09:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00",
@@ -303,53 +367,160 @@ namespace VisproProject
         "18:00 - 19:00", "19:00 - 20:00", "20:00 - 21:00", "21:00 - 22:00"
             };
 
-            // Buat tombol untuk setiap slot waktu
-            int x = 50, y = 43;
+            Label lblCourt = new Label();
+            lblCourt.Text = courtName;
+            lblCourt.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            lblCourt.Size = new Size(200, 20);
+            lblCourt.Location = new Point(50, 20);
+            panelJam.Controls.Add(lblCourt);
+
+            int x = 50, y = 50;
+            Dictionary<Button, CheckBox> buttonCheckboxMap = new Dictionary<Button, CheckBox>();
+            Button btnKonfirmasi = new Button();
+            btnKonfirmasi.Text = "Konfirmasi";
+            btnKonfirmasi.Size = new Size(100, 30);
+            btnKonfirmasi.FlatStyle = FlatStyle.Flat;
+            btnKonfirmasi.FlatAppearance.BorderSize = 1;
+            btnKonfirmasi.Font = new Font("Segoe UI", 8, FontStyle.Regular);
+            btnKonfirmasi.Location = new Point(panelJam.Width - 120, panelJam.Height - 50);
+            btnKonfirmasi.Enabled = false;
+            btnKonfirmasi.Visible = false;
+
             foreach (string slot in availableSlots)
             {
                 Button btn = new Button();
                 btn.Text = slot;
                 btn.Size = new Size(120, 27);
                 btn.Location = new Point(x, y);
-
-                // Mengatur tampilan tombol agar flat
                 btn.FlatStyle = FlatStyle.Flat;
-                btn.FlatAppearance.BorderSize = 1; // Menghilangkan border
-                btn.FlatAppearance.MouseOverBackColor = Color.LightGray; // Warna saat hover
-                btn.FlatAppearance.MouseDownBackColor = Color.DarkGray; // Warna saat ditekan
-
-                // Mengatur font Segoe UI ukuran 8
+                btn.FlatAppearance.BorderSize = 1;
+                btn.FlatAppearance.MouseOverBackColor = Color.LightGray;
+                btn.FlatAppearance.MouseDownBackColor = Color.DarkGray;
                 btn.Font = new Font("Segoe UI", 8, FontStyle.Regular);
 
-                // Cek apakah slot ini sudah dibooking
+                CheckBox chk = new CheckBox();
+                chk.Visible = false;
+                chk.Checked = false;
+
                 if (bookedSlots.ContainsKey(slot))
                 {
-                    if (bookedSlots[slot] == "Mendatang" || bookedSlots[slot] == "Selesai")
-                    {
-                        btn.BackColor = Color.Red; // Sudah dibooking
-                        btn.Enabled = false; // Nonaktifkan tombol
-                    }
-                    else
-                    {
-                        btn.BackColor = Color.Green; // Masih bisa dibooking
-                    }
+                    btn.BackColor = Color.Red;
+                    btn.Enabled = false;
                 }
                 else
                 {
-                    btn.BackColor = Color.Green; // Masih tersedia
+                    btn.BackColor = Color.Green;
                 }
 
-                panelJam.Controls.Add(btn);
+                btn.Click += (sender, e) => {
+                    chk.Checked = !chk.Checked;
+                    btn.BackColor = chk.Checked ? Color.Yellow : Color.Green;
+                    btnKonfirmasi.Enabled = buttonCheckboxMap.Values.Any(cb => cb.Checked);
+                    btnKonfirmasi.Visible = btnKonfirmasi.Enabled;
+                };
 
-                // Atur posisi tombol (misal grid 4 kolom)
+                panelJam.Controls.Add(btn);
+                buttonCheckboxMap[btn] = chk;
+
                 x += 120;
-                if (x > 560) // Misalnya 4 kolom, balik ke baris baru
+                if (x > 560)
                 {
                     x = 50;
                     y += 30;
                 }
             }
+
+            btnKonfirmasi.Click += (sender, e) => TampilkanFormPemesanan(courtName, buttonCheckboxMap);
+            panelJam.Controls.Add(btnKonfirmasi);
         }
+
+        private void TampilkanFormPemesanan(string courtName, Dictionary<Button, CheckBox> buttonCheckboxMap)
+        {
+            panelJam.Controls.Clear();
+
+            Label lblpesan = new Label();
+            lblpesan.Text = "Konfirmasi Pesanan Anda";
+            lblpesan.Size = new Size(250, 20);
+            lblpesan.Location = new Point(50, 10);
+            lblpesan.Font = new Font("Segoe UI", 13, FontStyle.Bold);
+            panelJam.Controls.Add(lblpesan);
+
+            Label lblNama = new Label();
+            lblNama.Text = "Nama :";
+            lblNama.Location = new Point(50, 50);
+            lblNama.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+            panelJam.Controls.Add(lblNama);
+
+            TextBox txtNama = new TextBox();
+            txtNama.Location = new Point(150, 50);
+            txtNama.Size = new Size(200, 20);
+            txtNama.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+            panelJam.Controls.Add(txtNama);
+
+            Label lblKontak = new Label();
+            lblKontak.Text = "Kontak :";
+            lblKontak.Location = new Point(50, 90);
+            lblKontak.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+            panelJam.Controls.Add(lblKontak);
+
+            TextBox txtKontak = new TextBox();
+            txtKontak.Location = new Point(150, 90);
+            txtKontak.Size = new Size(200, 20);
+            txtKontak.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+            panelJam.Controls.Add(txtKontak);
+
+            Button btnSimpan = new Button();
+            btnSimpan.Text = "Konfirmasi";
+            btnSimpan.Size = new Size(100, 30);
+            btnSimpan.Location = new Point(50, 130);
+            btnSimpan.FlatStyle = FlatStyle.Flat;
+            btnSimpan.FlatAppearance.BorderSize = 1;
+            btnSimpan.Font = new Font("Segoe UI", 8, FontStyle.Regular);
+
+            btnSimpan.Click += (sender, e) => SimpanReservasi(courtName, txtNama.Text, txtKontak.Text, buttonCheckboxMap);
+            panelJam.Controls.Add(btnSimpan);
+        }
+
+        private void SimpanReservasi(string courtName, string nama, string kontak, Dictionary<Button, CheckBox> buttonCheckboxMap)
+        {
+            if (string.IsNullOrWhiteSpace(nama) || string.IsNullOrWhiteSpace(kontak))
+            {
+                MessageBox.Show("Nama dan kontak harus diisi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            List<string> selectedSlots = new List<string>();
+            foreach (var pair in buttonCheckboxMap)
+            {
+                if (pair.Value.Checked)
+                {
+                    selectedSlots.Add(pair.Key.Text);
+                }
+            }
+
+            using (MySqlConnection koneksi = new MySqlConnection(alamat))
+            {
+                koneksi.Open();
+                foreach (string slot in selectedSlots)
+                {
+                    string query = "INSERT INTO tbl_reservasi (field, date, time_slot, customer, kontakPenyewa, status) VALUES (@court, @date, @slot, @nama, @kontak, 'Mendatang')";
+                    using (MySqlCommand perintah = new MySqlCommand(query, koneksi))
+                    {
+                        perintah.Parameters.AddWithValue("@court", courtName);
+                        perintah.Parameters.AddWithValue("@date", dateLapangan.Value.ToString("yyyy-MM-dd"));
+                        perintah.Parameters.AddWithValue("@slot", slot);
+                        perintah.Parameters.AddWithValue("@nama", nama);
+                        perintah.Parameters.AddWithValue("@kontak", kontak);
+                        perintah.ExecuteNonQuery();
+                    }
+                }
+            }
+
+            MessageBox.Show("Reservasi berhasil disimpan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            UpdateCourtButtons(courtName);
+        }
+
+
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
         {
@@ -366,20 +537,6 @@ namespace VisproProject
             {
                 UpdateCourtButtons("COURT 3");
             }
-        }
-
-        private void ShowSchedulePanel(string courtName)
-        {
-            // Tampilkan panel
-            panelJam.Visible = true;
-
-            // Ubah teks label sesuai dengan court yang dipilih
-            lblJadwalTitle.Text = $"Jadwal {courtName}";
-
-            lblJadwalTitle.Visible = true;
-
-            // Pastikan DateTimePicker juga muncul
-            dateTime.Visible = true;
         }
     }
 }

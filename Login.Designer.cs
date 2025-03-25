@@ -36,14 +36,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.roundpanel1 = new VisproProject.roundpanel();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.roundpanel1 = new VisproProject.roundpanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
-            this.roundpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            this.roundpanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -117,7 +117,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(588, 211);
+            this.label1.Location = new System.Drawing.Point(611, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 38);
             this.label1.TabIndex = 0;
@@ -127,7 +127,7 @@
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.Location = new System.Drawing.Point(629, 297);
+            this.txtUsername.Location = new System.Drawing.Point(652, 297);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(190, 30);
             this.txtUsername.TabIndex = 1;
@@ -136,11 +136,53 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(629, 369);
+            this.txtPassword.Location = new System.Drawing.Point(652, 369);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(190, 30);
             this.txtPassword.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(478, 295);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 31);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Username";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(478, 367);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 31);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Password";
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(38, 58);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(288, 511);
+            this.axWindowsMediaPlayer1.TabIndex = 12;
+            // 
+            // roundpanel1
+            // 
+            this.roundpanel1.BackColor = System.Drawing.Color.DimGray;
+            this.roundpanel1.Controls.Add(this.button1);
+            this.roundpanel1.Location = new System.Drawing.Point(755, 417);
+            this.roundpanel1.Name = "roundpanel1";
+            this.roundpanel1.Size = new System.Drawing.Size(87, 41);
+            this.roundpanel1.TabIndex = 6;
             // 
             // button1
             // 
@@ -157,48 +199,6 @@
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(455, 295);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 31);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Username";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(455, 367);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 31);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Password";
-            // 
-            // roundpanel1
-            // 
-            this.roundpanel1.BackColor = System.Drawing.Color.DimGray;
-            this.roundpanel1.Controls.Add(this.button1);
-            this.roundpanel1.Location = new System.Drawing.Point(732, 417);
-            this.roundpanel1.Name = "roundpanel1";
-            this.roundpanel1.Size = new System.Drawing.Size(87, 41);
-            this.roundpanel1.TabIndex = 6;
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(44, 63);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(294, 515);
-            this.axWindowsMediaPlayer1.TabIndex = 12;
             // 
             // Login
             // 
@@ -224,8 +224,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panelHeader.ResumeLayout(false);
-            this.roundpanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            this.roundpanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

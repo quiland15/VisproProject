@@ -35,7 +35,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblLapangan = new System.Windows.Forms.Label();
             this.panelJam = new VisproProject.roundpanel();
-            this.dateTime = new System.Windows.Forms.DateTimePicker();
+            this.dateLapangan = new System.Windows.Forms.DateTimePicker();
             this.lblJadwalTitle = new System.Windows.Forms.Label();
             this.dropdownPanel = new VisproProject.roundpanel();
             this.button2 = new System.Windows.Forms.Button();
@@ -162,27 +162,27 @@
             // panelJam
             // 
             this.panelJam.BackColor = System.Drawing.Color.DimGray;
-            this.panelJam.Controls.Add(this.dateTime);
+            this.panelJam.Controls.Add(this.dateLapangan);
             this.panelJam.Controls.Add(this.lblJadwalTitle);
-            this.panelJam.Location = new System.Drawing.Point(36, 489);
+            this.panelJam.Location = new System.Drawing.Point(36, 474);
             this.panelJam.Name = "panelJam";
-            this.panelJam.Size = new System.Drawing.Size(935, 186);
+            this.panelJam.Size = new System.Drawing.Size(935, 235);
             this.panelJam.TabIndex = 23;
             // 
-            // dateTime
+            // dateLapangan
             // 
-            this.dateTime.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTime.CalendarForeColor = System.Drawing.Color.DimGray;
-            this.dateTime.CalendarMonthBackground = System.Drawing.Color.DimGray;
-            this.dateTime.CalendarTitleBackColor = System.Drawing.Color.DimGray;
-            this.dateTime.CalendarTitleForeColor = System.Drawing.Color.DimGray;
-            this.dateTime.CalendarTrailingForeColor = System.Drawing.Color.DimGray;
-            this.dateTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTime.Location = new System.Drawing.Point(799, 17);
-            this.dateTime.Name = "dateTime";
-            this.dateTime.Size = new System.Drawing.Size(114, 27);
-            this.dateTime.TabIndex = 1;
+            this.dateLapangan.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLapangan.CalendarForeColor = System.Drawing.Color.DimGray;
+            this.dateLapangan.CalendarMonthBackground = System.Drawing.Color.DimGray;
+            this.dateLapangan.CalendarTitleBackColor = System.Drawing.Color.DimGray;
+            this.dateLapangan.CalendarTitleForeColor = System.Drawing.Color.DimGray;
+            this.dateLapangan.CalendarTrailingForeColor = System.Drawing.Color.DimGray;
+            this.dateLapangan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLapangan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateLapangan.Location = new System.Drawing.Point(799, 17);
+            this.dateLapangan.Name = "dateLapangan";
+            this.dateLapangan.Size = new System.Drawing.Size(114, 27);
+            this.dateLapangan.TabIndex = 1;
             // 
             // lblJadwalTitle
             // 
@@ -547,6 +547,7 @@
             this.Controls.Add(this.roundpanel1);
             this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(2048, 1080);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Lapangan";
@@ -613,6 +614,6 @@
         private System.Windows.Forms.Button btncourt3;
         private roundpanel panelJam;
         private System.Windows.Forms.Label lblJadwalTitle;
-        private System.Windows.Forms.DateTimePicker dateTime;
+        private System.Windows.Forms.DateTimePicker dateLapangan;
     }
 }
