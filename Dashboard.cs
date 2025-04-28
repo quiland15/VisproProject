@@ -13,6 +13,7 @@ using System.Runtime.InteropServices;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace VisproProject
 {
@@ -145,7 +146,7 @@ namespace VisproProject
             try
             {
                 koneksi.Open();
-                query = string.Format("select id, customer, field, time_slot, date, status from tbl_reservasi WHERE date BETWEEN CURDATE() - INTERVAL 2 DAY AND CURDATE()");
+                query = string.Format("select id, customer, field, time_slot, date, status, harga, kasirName from tbl_reservasi WHERE date BETWEEN CURDATE() - INTERVAL 2 DAY AND CURDATE()");
                 perintah = new MySqlCommand(query, koneksi);
                 adapter = new MySqlDataAdapter(perintah);
                 perintah.ExecuteNonQuery();
@@ -165,6 +166,10 @@ namespace VisproProject
                 dataGridView1.Columns[4].HeaderText = "Tanggal";
                 dataGridView1.Columns[5].Width = 100;
                 dataGridView1.Columns[5].HeaderText = "Status";
+                dataGridView1.Columns[6].Width = 100;
+                dataGridView1.Columns[6].HeaderText = "Harga";
+                dataGridView1.Columns[7].Width = 100;
+                dataGridView1.Columns[7].HeaderText = "Kasir";
 
                 //txtID.Clear();
                 //txtNama.Clear();
@@ -185,6 +190,7 @@ namespace VisproProject
             }
 
             LoadDashboardData();
+            //HitungPendapatan(4, 2025);
 
             Timer timer = new Timer();
             timer.Interval = 10000; // 10 detik
@@ -204,7 +210,8 @@ namespace VisproProject
         {
             this.Hide();
 
-            Lapangan lapangan = new Lapangan();
+            Lapangan lapangan = new Lapangan(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
+            //Lapangan lapangan = new Lapangan();
             lapangan.Show();
         }
 
@@ -212,15 +219,15 @@ namespace VisproProject
         {
             this.Hide();
 
-            Lapangan lapangan = new Lapangan();
+            Lapangan lapangan = new Lapangan(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
+            //Lapangan lapangan = new Lapangan();
             lapangan.Show();
         }
 
         private void btnManageBooking_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            History history = new History();
+            History history = new History(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
+            //Lapangan lapangan = new Lapangan();
             history.Show();
         }
 
@@ -228,7 +235,7 @@ namespace VisproProject
         {
             this.Hide();
 
-            History history = new History();
+            History history = new History(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
             history.Show();
         }
 
@@ -236,7 +243,8 @@ namespace VisproProject
         {
             this.Hide();
 
-            Lapangan lapangan = new Lapangan();
+            Lapangan lapangan = new Lapangan(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
+            //Lapangan lapangan = new Lapangan();
             lapangan.Show();
         }
 
@@ -244,7 +252,7 @@ namespace VisproProject
         {
             this.Hide();
 
-            History history = new History();
+            History history = new History(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
             history.Show();
         }
 
@@ -252,8 +260,16 @@ namespace VisproProject
         {
             this.Hide();
 
-            About about = new About();
+            About about = new About(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
             about.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            frmaccount account = new frmaccount(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
+            account.Show();
         }
 
         private void LoadDashboardData()
@@ -288,6 +304,33 @@ namespace VisproProject
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+        public void SetUserRole(string role, string fullname)
+        {
+            if (role == "Cashier")
+            {
+                userStatus.Text = $"Cashier : {fullname}"; // Format khusus Cashier
+            }
+            else if (role == "Admin")
+            {
+                userStatus.Text = "Admin"; // Admin tetap "Admin" tanpa nama
+            }
+        }
 
+        //private void HitungPendapatan(int bulan, int tahun)
+        //{
+        //    string connectionString = "server=localhost; database=db_vispro; User ID=root; password=Quiland15september_;"; // Ganti dengan connection string ke database
+        //    string query = "SELECT SUM(harga) AS totalPendapatan FROM tbl_reservasi WHERE MONTH(date) = @bulan AND YEAR(date) = @tahun";
+
+        //    using (SqlConnection conn = new SqlConnection(connectionString))
+        //    {
+        //        SqlCommand cmd = new SqlCommand(query, conn);
+        //        cmd.Parameters.AddWithValue("@bulan", bulan);
+        //        cmd.Parameters.AddWithValue("@tahun", tahun);
+
+        //        conn.Open();
+        //        var result = cmd.ExecuteScalar();
+        //        lblPendapatanBulanIni.Text = result != DBNull.Value ? result.ToString() : "0";
+        //    }
+        //}
     }
 }

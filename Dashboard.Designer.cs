@@ -82,6 +82,7 @@
             this.roundpanel1 = new VisproProject.roundpanel();
             this.roundedPictureBox2 = new VisproProject.RoundedPictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.userStatus = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.roundpanel8.SuspendLayout();
             this.roundpanel14.SuspendLayout();
@@ -110,6 +111,7 @@
             this.panelHeader.AutoSize = true;
             this.panelHeader.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelHeader.BackColor = System.Drawing.Color.DimGray;
+            this.panelHeader.Controls.Add(this.userStatus);
             this.panelHeader.Controls.Add(this.btnMinimize);
             this.panelHeader.Controls.Add(this.btnMaximize);
             this.panelHeader.Controls.Add(this.btnClose);
@@ -493,6 +495,7 @@
             this.button1.Text = "Account";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // roundpanel5
             // 
@@ -756,6 +759,17 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "BearsApp";
             // 
+            // userStatus
+            // 
+            this.userStatus.AutoSize = true;
+            this.userStatus.BackColor = System.Drawing.Color.Transparent;
+            this.userStatus.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userStatus.Location = new System.Drawing.Point(3, 4);
+            this.userStatus.Name = "userStatus";
+            this.userStatus.Size = new System.Drawing.Size(66, 26);
+            this.userStatus.TabIndex = 30;
+            this.userStatus.Text = "Cashier";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -786,6 +800,7 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             this.roundpanel8.ResumeLayout(false);
             this.roundpanel8.PerformLayout();
             this.roundpanel14.ResumeLayout(false);
@@ -877,5 +892,6 @@
         private System.Windows.Forms.Button btnPaymentHistory;
         private System.Windows.Forms.Button btnCheckAvailability;
         private System.Windows.Forms.Button btnManageBooking;
+        private System.Windows.Forms.Label userStatus;
     }
 }

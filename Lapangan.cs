@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -26,7 +27,10 @@ namespace VisproProject
 
         private bool dragging = false;
         private Point offset;
-        public Lapangan()
+
+        private string userRole;
+        private string fullname;
+        public Lapangan(string role, string name)
         {
             alamat = "server=localhost; database=db_vispro; username=root; password=Quiland15september_;";
             koneksi = new MySqlConnection(alamat);
@@ -35,6 +39,12 @@ namespace VisproProject
 
             ApplyBlurEffect();
             SetupUI();
+
+            userRole = role;
+            fullname = name;
+
+            // Misal lo punya label buat nampilin info user
+            userStatus.Text = (role == "Cashier") ? $"Cashier : {name}" : "Admin";
 
             panelHeader.MouseDown += new MouseEventHandler(PanelHeader_MouseDown);
             panelHeader.MouseMove += new MouseEventHandler(PanelHeader_MouseMove);
@@ -141,6 +151,7 @@ namespace VisproProject
             this.Hide();
 
             Dashboard dashboard = new Dashboard();
+            dashboard.SetUserRole(userRole, fullname);
             dashboard.Show();
         }
 
@@ -148,7 +159,8 @@ namespace VisproProject
         {
             this.Hide();
 
-            Lapangan lapangan = new Lapangan();
+            Lapangan lapangan = new Lapangan(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
+            //Lapangan lapangan = new Lapangan();
             lapangan.Show();
         }
 
@@ -156,7 +168,7 @@ namespace VisproProject
         {
             this.Hide();
 
-            History history = new History();
+            History history = new History(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
             history.Show();
         }
 
@@ -164,7 +176,7 @@ namespace VisproProject
         {
             this.Hide();
 
-            About about = new About();
+            About about = new About(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
             about.Show();
         }
 
@@ -498,12 +510,15 @@ namespace VisproProject
                 }
             }
 
+            int hargaPerJam = GetHargaPerJam(courtName);
+            string cashierName = GetNamaCashier();
+
             using (MySqlConnection koneksi = new MySqlConnection(alamat))
             {
                 koneksi.Open();
                 foreach (string slot in selectedSlots)
                 {
-                    string query = "INSERT INTO tbl_reservasi (field, date, time_slot, customer, kontakPenyewa, status) VALUES (@court, @date, @slot, @nama, @kontak, 'Mendatang')";
+                    string query = "INSERT INTO tbl_reservasi (field, date, time_slot, customer, kontakPenyewa, status, harga, kasirName) VALUES (@court, @date, @slot, @nama, @kontak, 'Mendatang', @harga, @cashier)";
                     using (MySqlCommand perintah = new MySqlCommand(query, koneksi))
                     {
                         perintah.Parameters.AddWithValue("@court", courtName);
@@ -511,6 +526,8 @@ namespace VisproProject
                         perintah.Parameters.AddWithValue("@slot", slot);
                         perintah.Parameters.AddWithValue("@nama", nama);
                         perintah.Parameters.AddWithValue("@kontak", kontak);
+                        perintah.Parameters.AddWithValue("@harga", hargaPerJam);
+                        perintah.Parameters.AddWithValue("@cashier", cashierName); // ini cashier login
                         perintah.ExecuteNonQuery();
                     }
                 }
@@ -520,6 +537,41 @@ namespace VisproProject
             UpdateCourtButtons(courtName);
         }
 
+        private string GetNamaCashier()
+        {
+            string namaCashier = "";
+
+            using (MySqlConnection koneksi = new MySqlConnection(alamat))
+            {
+                koneksi.Open();
+                string query = "SELECT fullname FROM tbl_users WHERE fullname = @username";
+                using (MySqlCommand perintah = new MySqlCommand(query, koneksi))
+                {
+                    perintah.Parameters.AddWithValue("@username", fullname);
+                    object hasil = perintah.ExecuteScalar();
+                    if (hasil != null)
+                    {
+                        namaCashier = hasil.ToString();
+                    }
+                }
+            }
+
+            return namaCashier;
+        }
+
+        private int GetHargaPerJam(string courtName)
+        {
+            switch (courtName)
+            {
+                case "COURT 1":
+                    return 200000; // 200 ribu per jam
+                case "COURT 2":
+                case "COURT 3":
+                    return 150000; // 150 ribu per jam
+                default:
+                    return 0;
+            }
+        }
 
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -536,6 +588,26 @@ namespace VisproProject
             else if (btncourt3.BackColor == Color.Gray)
             {
                 UpdateCourtButtons("COURT 3");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            frmaccount account = new frmaccount(userStatus.Text.Contains("Cashier") ? "Cashier" : "Admin", userStatus.Text.Replace("Cashier : ", ""));
+            account.Show();
+        }
+
+        public void SetUserRole(string role, string fullname)
+        {
+            if (role == "Cashier")
+            {
+                userStatus.Text = $"Cashier : {fullname}"; // Format khusus Cashier
+            }
+            else if (role == "Admin")
+            {
+                userStatus.Text = "Admin"; // Admin tetap "Admin" tanpa nama
             }
         }
     }

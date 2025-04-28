@@ -78,7 +78,7 @@ namespace VisproProject
         {
             try
             {
-                query = string.Format("select * from tbl_users where username = '{0}'", txtUsername.Text);
+                query = string.Format("select username, password, status, fullname from tbl_users where username = '{0}'", txtUsername.Text);
                 ds.Clear();
                 koneksi.Open();
                 perintah = new MySqlCommand(query, koneksi);
@@ -91,6 +91,8 @@ namespace VisproProject
                     foreach (DataRow kolom in ds.Tables[0].Rows)
                     {
                         string sandi;
+                        string fullname = kolom["fullname"].ToString();
+                        string userRole = kolom["status"].ToString();
                         sandi = kolom["password"].ToString();
                         if (sandi == txtPassword.Text)
                         {
@@ -98,6 +100,7 @@ namespace VisproProject
                             this.Hide();
 
                             Dashboard dashboard = new Dashboard();
+                            dashboard.SetUserRole(userRole, fullname);
                             dashboard.Show();
                         }
                         else

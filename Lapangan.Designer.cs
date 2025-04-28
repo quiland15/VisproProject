@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lapangan));
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.userStatus = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -87,6 +88,7 @@
             this.panelHeader.AutoSize = true;
             this.panelHeader.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelHeader.BackColor = System.Drawing.Color.DimGray;
+            this.panelHeader.Controls.Add(this.userStatus);
             this.panelHeader.Controls.Add(this.btnMinimize);
             this.panelHeader.Controls.Add(this.btnMaximize);
             this.panelHeader.Controls.Add(this.btnClose);
@@ -98,6 +100,17 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1006, 32);
             this.panelHeader.TabIndex = 4;
+            // 
+            // userStatus
+            // 
+            this.userStatus.AutoSize = true;
+            this.userStatus.BackColor = System.Drawing.Color.Transparent;
+            this.userStatus.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userStatus.Location = new System.Drawing.Point(3, 4);
+            this.userStatus.Name = "userStatus";
+            this.userStatus.Size = new System.Drawing.Size(66, 26);
+            this.userStatus.TabIndex = 31;
+            this.userStatus.Text = "Cashier";
             // 
             // btnMinimize
             // 
@@ -227,6 +240,7 @@
             this.button1.Text = "Account";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnlCourt3
             // 
@@ -553,6 +567,7 @@
             this.Name = "Lapangan";
             this.Text = "Lapangan";
             this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             this.panelJam.ResumeLayout(false);
             this.panelJam.PerformLayout();
             this.dropdownPanel.ResumeLayout(false);
@@ -615,5 +630,6 @@
         private roundpanel panelJam;
         private System.Windows.Forms.Label lblJadwalTitle;
         private System.Windows.Forms.DateTimePicker dateLapangan;
+        private System.Windows.Forms.Label userStatus;
     }
 }
