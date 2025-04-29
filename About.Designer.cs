@@ -48,43 +48,43 @@
             this.roundedPictureBox2 = new VisproProject.RoundedPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.roundpanel5 = new VisproProject.roundpanel();
-            this.roundpanel2 = new VisproProject.roundpanel();
-            this.roundpanel3 = new VisproProject.roundpanel();
-            this.aboutLabel = new System.Windows.Forms.Label();
-            this.roundedPictureBox3 = new VisproProject.RoundedPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.roundedPictureBox3 = new VisproProject.RoundedPictureBox();
+            this.aboutLabel = new System.Windows.Forms.Label();
+            this.roundpanel2 = new VisproProject.roundpanel();
             this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.roundpanel3 = new VisproProject.roundpanel();
+            this.roundpanel9 = new VisproProject.roundpanel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.roundpanel8 = new VisproProject.roundpanel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.roundpanel10 = new VisproProject.roundpanel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.roundpanel7 = new VisproProject.roundpanel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.roundpanel6 = new VisproProject.roundpanel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.roundpanel4 = new VisproProject.roundpanel();
-            this.roundpanel6 = new VisproProject.roundpanel();
-            this.roundpanel7 = new VisproProject.roundpanel();
-            this.roundpanel8 = new VisproProject.roundpanel();
-            this.roundpanel9 = new VisproProject.roundpanel();
-            this.roundpanel10 = new VisproProject.roundpanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.dropdownPanel.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
@@ -92,15 +92,15 @@
             this.roundpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).BeginInit();
             this.roundpanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).BeginInit();
             this.roundpanel2.SuspendLayout();
             this.roundpanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).BeginInit();
-            this.roundpanel4.SuspendLayout();
-            this.roundpanel6.SuspendLayout();
-            this.roundpanel7.SuspendLayout();
-            this.roundpanel8.SuspendLayout();
             this.roundpanel9.SuspendLayout();
+            this.roundpanel8.SuspendLayout();
             this.roundpanel10.SuspendLayout();
+            this.roundpanel7.SuspendLayout();
+            this.roundpanel6.SuspendLayout();
+            this.roundpanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -369,6 +369,93 @@
             this.roundpanel5.Size = new System.Drawing.Size(454, 280);
             this.roundpanel5.TabIndex = 39;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(33, 205);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(219, 20);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "komunitas olahraga di Manado.";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(33, 185);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(373, 20);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "menjadi tempat pilihan bagi keluarga, profesional, dan";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(33, 165);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(381, 20);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "berkualitas tinggi untuk berbagai kegiatan olahraga dan";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(32, 145);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(344, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "berlokasi di Manado. Kami menyediakan lapangan";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(32, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(398, 20);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Bears8 Sport Center adalah fasilitas olahraga modern yang";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(125, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(183, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Sport Center Manado";
+            // 
+            // roundedPictureBox3
+            // 
+            this.roundedPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox3.Image")));
+            this.roundedPictureBox3.Location = new System.Drawing.Point(21, 18);
+            this.roundedPictureBox3.Name = "roundedPictureBox3";
+            this.roundedPictureBox3.Size = new System.Drawing.Size(86, 80);
+            this.roundedPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundedPictureBox3.TabIndex = 12;
+            this.roundedPictureBox3.TabStop = false;
+            // 
+            // aboutLabel
+            // 
+            this.aboutLabel.AutoSize = true;
+            this.aboutLabel.BackColor = System.Drawing.Color.Transparent;
+            this.aboutLabel.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutLabel.Location = new System.Drawing.Point(124, 28);
+            this.aboutLabel.Name = "aboutLabel";
+            this.aboutLabel.Size = new System.Drawing.Size(109, 31);
+            this.aboutLabel.TabIndex = 8;
+            this.aboutLabel.Text = "BEARS 8";
+            // 
             // roundpanel2
             // 
             this.roundpanel2.BackColor = System.Drawing.Color.DimGray;
@@ -385,6 +472,94 @@
             this.roundpanel2.Size = new System.Drawing.Size(450, 280);
             this.roundpanel2.TabIndex = 40;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(42, 229);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(240, 20);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "Senin - Minggu: 08:00 - 22:00 WITA";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(22, 201);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(150, 25);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Jam Operational :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(42, 166);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(139, 20);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "+62 821-9876-5432";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(22, 138);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 25);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Telepon :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(42, 108);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(212, 20);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Manado, Sulawesi Utara 95162";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(42, 88);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(328, 20);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Jl. Raya Manado No. 88, Kecamatan Malalayang,";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(22, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 25);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Alamat :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(22, 26);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(191, 25);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "KONTAK DAN LOKASI";
+            // 
             // roundpanel3
             // 
             this.roundpanel3.BackColor = System.Drawing.Color.DimGray;
@@ -399,180 +574,165 @@
             this.roundpanel3.Size = new System.Drawing.Size(931, 203);
             this.roundpanel3.TabIndex = 40;
             // 
-            // aboutLabel
+            // roundpanel9
             // 
-            this.aboutLabel.AutoSize = true;
-            this.aboutLabel.BackColor = System.Drawing.Color.Transparent;
-            this.aboutLabel.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aboutLabel.Location = new System.Drawing.Point(124, 28);
-            this.aboutLabel.Name = "aboutLabel";
-            this.aboutLabel.Size = new System.Drawing.Size(109, 31);
-            this.aboutLabel.TabIndex = 8;
-            this.aboutLabel.Text = "BEARS 8";
+            this.roundpanel9.BackColor = System.Drawing.Color.Silver;
+            this.roundpanel9.Controls.Add(this.label28);
+            this.roundpanel9.Controls.Add(this.label22);
+            this.roundpanel9.Location = new System.Drawing.Point(645, 125);
+            this.roundpanel9.Name = "roundpanel9";
+            this.roundpanel9.Size = new System.Drawing.Size(251, 65);
+            this.roundpanel9.TabIndex = 44;
             // 
-            // roundedPictureBox3
+            // label28
             // 
-            this.roundedPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox3.Image")));
-            this.roundedPictureBox3.Location = new System.Drawing.Point(21, 18);
-            this.roundedPictureBox3.Name = "roundedPictureBox3";
-            this.roundedPictureBox3.Size = new System.Drawing.Size(86, 80);
-            this.roundedPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roundedPictureBox3.TabIndex = 12;
-            this.roundedPictureBox3.TabStop = false;
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(40, 30);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(101, 20);
+            this.label28.TabIndex = 30;
+            this.label28.Text = "Memiliki GYM";
             // 
-            // label2
+            // label22
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(125, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 25);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Sport Center Manado";
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(19, 8);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(40, 20);
+            this.label22.TabIndex = 29;
+            this.label22.Text = "GYM";
             // 
-            // label3
+            // roundpanel8
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(398, 20);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Bears8 Sport Center adalah fasilitas olahraga modern yang";
+            this.roundpanel8.BackColor = System.Drawing.Color.Silver;
+            this.roundpanel8.Controls.Add(this.label27);
+            this.roundpanel8.Controls.Add(this.label21);
+            this.roundpanel8.Location = new System.Drawing.Point(343, 125);
+            this.roundpanel8.Name = "roundpanel8";
+            this.roundpanel8.Size = new System.Drawing.Size(251, 65);
+            this.roundpanel8.TabIndex = 42;
             // 
-            // label4
+            // label27
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 145);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(344, 20);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "berlokasi di Manado. Kami menyediakan lapangan";
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(8, 30);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(229, 20);
+            this.label27.TabIndex = 29;
+            this.label27.Text = "Tersedia Wi-fi Gratis untuk umum";
             // 
-            // label5
+            // label21
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 165);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(381, 20);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "berkualitas tinggi untuk berbagai kegiatan olahraga dan";
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(15, 8);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(84, 20);
+            this.label21.TabIndex = 28;
+            this.label21.Text = "Wi-fi Gratis";
             // 
-            // label6
+            // roundpanel10
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 185);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(373, 20);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "menjadi tempat pilihan bagi keluarga, profesional, dan";
+            this.roundpanel10.BackColor = System.Drawing.Color.Silver;
+            this.roundpanel10.Controls.Add(this.label25);
+            this.roundpanel10.Controls.Add(this.label20);
+            this.roundpanel10.Location = new System.Drawing.Point(645, 54);
+            this.roundpanel10.Name = "roundpanel10";
+            this.roundpanel10.Size = new System.Drawing.Size(251, 65);
+            this.roundpanel10.TabIndex = 45;
             // 
-            // label7
+            // label25
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(33, 205);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(219, 20);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "komunitas olahraga di Manado.";
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(41, 33);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(128, 17);
+            this.label25.TabIndex = 28;
+            this.label25.Text = "Ada Kantin Makanan";
             // 
-            // label8
+            // label20
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(22, 26);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(191, 25);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "KONTAK DAN LOKASI";
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(18, 9);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(51, 20);
+            this.label20.TabIndex = 27;
+            this.label20.Text = "Kantin";
             // 
-            // label9
+            // roundpanel7
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(22, 57);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 25);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Alamat :";
+            this.roundpanel7.BackColor = System.Drawing.Color.Silver;
+            this.roundpanel7.Controls.Add(this.label24);
+            this.roundpanel7.Controls.Add(this.label19);
+            this.roundpanel7.Location = new System.Drawing.Point(343, 54);
+            this.roundpanel7.Name = "roundpanel7";
+            this.roundpanel7.Size = new System.Drawing.Size(251, 65);
+            this.roundpanel7.TabIndex = 43;
             // 
-            // label10
+            // label24
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(42, 88);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(328, 20);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Jl. Raya Manado No. 88, Kecamatan Malalayang,";
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(24, 33);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(207, 20);
+            this.label24.TabIndex = 27;
+            this.label24.Text = "Memiliki Area Parkir yang luas";
             // 
-            // label11
+            // label19
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(42, 108);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(212, 20);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Manado, Sulawesi Utara 95162";
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(14, 9);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(80, 20);
+            this.label19.TabIndex = 26;
+            this.label19.Text = "Area Parkir";
             // 
-            // label12
+            // roundpanel6
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(22, 138);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 25);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Telepon :";
+            this.roundpanel6.BackColor = System.Drawing.Color.Silver;
+            this.roundpanel6.Controls.Add(this.label23);
+            this.roundpanel6.Controls.Add(this.label17);
+            this.roundpanel6.Location = new System.Drawing.Point(49, 54);
+            this.roundpanel6.Name = "roundpanel6";
+            this.roundpanel6.Size = new System.Drawing.Size(251, 65);
+            this.roundpanel6.TabIndex = 42;
             // 
-            // label13
+            // label23
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(42, 166);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(139, 20);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "+62 821-9876-5432";
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(13, 33);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(224, 20);
+            this.label23.TabIndex = 26;
+            this.label23.Text = "1 MainCourt dan 3 lapangan 3x3";
             // 
-            // label14
+            // label17
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(22, 201);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(150, 25);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "Jam Operational :";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(42, 229);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(240, 20);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "Senin - Minggu: 08:00 - 22:00 WITA";
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(13, 9);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(122, 20);
+            this.label17.TabIndex = 25;
+            this.label17.Text = "Lapangan Indoor";
             // 
             // label16
             // 
@@ -595,155 +755,6 @@
             this.roundpanel4.Size = new System.Drawing.Size(251, 65);
             this.roundpanel4.TabIndex = 41;
             // 
-            // roundpanel6
-            // 
-            this.roundpanel6.BackColor = System.Drawing.Color.Silver;
-            this.roundpanel6.Controls.Add(this.label23);
-            this.roundpanel6.Controls.Add(this.label17);
-            this.roundpanel6.Location = new System.Drawing.Point(49, 54);
-            this.roundpanel6.Name = "roundpanel6";
-            this.roundpanel6.Size = new System.Drawing.Size(251, 65);
-            this.roundpanel6.TabIndex = 42;
-            // 
-            // roundpanel7
-            // 
-            this.roundpanel7.BackColor = System.Drawing.Color.Silver;
-            this.roundpanel7.Controls.Add(this.label24);
-            this.roundpanel7.Controls.Add(this.label19);
-            this.roundpanel7.Location = new System.Drawing.Point(343, 54);
-            this.roundpanel7.Name = "roundpanel7";
-            this.roundpanel7.Size = new System.Drawing.Size(251, 65);
-            this.roundpanel7.TabIndex = 43;
-            // 
-            // roundpanel8
-            // 
-            this.roundpanel8.BackColor = System.Drawing.Color.Silver;
-            this.roundpanel8.Controls.Add(this.label27);
-            this.roundpanel8.Controls.Add(this.label21);
-            this.roundpanel8.Location = new System.Drawing.Point(343, 125);
-            this.roundpanel8.Name = "roundpanel8";
-            this.roundpanel8.Size = new System.Drawing.Size(251, 65);
-            this.roundpanel8.TabIndex = 42;
-            // 
-            // roundpanel9
-            // 
-            this.roundpanel9.BackColor = System.Drawing.Color.Silver;
-            this.roundpanel9.Controls.Add(this.label28);
-            this.roundpanel9.Controls.Add(this.label22);
-            this.roundpanel9.Location = new System.Drawing.Point(645, 125);
-            this.roundpanel9.Name = "roundpanel9";
-            this.roundpanel9.Size = new System.Drawing.Size(251, 65);
-            this.roundpanel9.TabIndex = 44;
-            // 
-            // roundpanel10
-            // 
-            this.roundpanel10.BackColor = System.Drawing.Color.Silver;
-            this.roundpanel10.Controls.Add(this.label25);
-            this.roundpanel10.Controls.Add(this.label20);
-            this.roundpanel10.Location = new System.Drawing.Point(645, 54);
-            this.roundpanel10.Name = "roundpanel10";
-            this.roundpanel10.Size = new System.Drawing.Size(251, 65);
-            this.roundpanel10.TabIndex = 45;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(13, 9);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(122, 20);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "Lapangan Indoor";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(13, 8);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(90, 20);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "Ruang Ganti";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(14, 9);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(80, 20);
-            this.label19.TabIndex = 26;
-            this.label19.Text = "Area Parkir";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(18, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 20);
-            this.label20.TabIndex = 27;
-            this.label20.Text = "Kantin";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(15, 8);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(84, 20);
-            this.label21.TabIndex = 28;
-            this.label21.Text = "Wi-fi Gratis";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(19, 8);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(40, 20);
-            this.label22.TabIndex = 29;
-            this.label22.Text = "GYM";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(13, 33);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(224, 20);
-            this.label23.TabIndex = 26;
-            this.label23.Text = "1 MainCourt dan 3 lapangan 3x3";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(24, 33);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(207, 20);
-            this.label24.TabIndex = 27;
-            this.label24.Text = "Memiliki Area Parkir yang luas";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(41, 33);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(128, 17);
-            this.label25.TabIndex = 28;
-            this.label25.Text = "Ada Kantin Makanan";
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -755,27 +766,16 @@
             this.label26.TabIndex = 28;
             this.label26.Text = "Ruang Ganti yang Nyaman";
             // 
-            // label27
+            // label18
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(8, 30);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(229, 20);
-            this.label27.TabIndex = 29;
-            this.label27.Text = "Tersedia Wi-fi Gratis untuk umum";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(40, 30);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(101, 20);
-            this.label28.TabIndex = 30;
-            this.label28.Text = "Memiliki GYM";
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(13, 8);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(90, 20);
+            this.label18.TabIndex = 26;
+            this.label18.Text = "Ruang Ganti";
             // 
             // About
             // 
@@ -797,6 +797,7 @@
             this.Controls.Add(this.roundpanel1);
             this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(2048, 1080);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "About";
@@ -811,23 +812,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).EndInit();
             this.roundpanel5.ResumeLayout(false);
             this.roundpanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).EndInit();
             this.roundpanel2.ResumeLayout(false);
             this.roundpanel2.PerformLayout();
             this.roundpanel3.ResumeLayout(false);
             this.roundpanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).EndInit();
-            this.roundpanel4.ResumeLayout(false);
-            this.roundpanel4.PerformLayout();
-            this.roundpanel6.ResumeLayout(false);
-            this.roundpanel6.PerformLayout();
-            this.roundpanel7.ResumeLayout(false);
-            this.roundpanel7.PerformLayout();
-            this.roundpanel8.ResumeLayout(false);
-            this.roundpanel8.PerformLayout();
             this.roundpanel9.ResumeLayout(false);
             this.roundpanel9.PerformLayout();
+            this.roundpanel8.ResumeLayout(false);
+            this.roundpanel8.PerformLayout();
             this.roundpanel10.ResumeLayout(false);
             this.roundpanel10.PerformLayout();
+            this.roundpanel7.ResumeLayout(false);
+            this.roundpanel7.PerformLayout();
+            this.roundpanel6.ResumeLayout(false);
+            this.roundpanel6.PerformLayout();
+            this.roundpanel4.ResumeLayout(false);
+            this.roundpanel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
